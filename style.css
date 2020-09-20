@@ -1,0 +1,239 @@
+html{
+    color:white;
+}
+header {
+    background: #77ced9;
+    height: 68px;
+    position: fixed;
+    width: 1024px;
+    top: 0;
+    z-index: 5;
+}
+main{
+    margin-top: 68px;
+    width: 1024px;
+}
+
+main section {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-template-rows: 200px auto auto;
+    grid-gap: 20px 90px;
+    width: auto;
+    padding: 40px;
+}
+pre{
+    background: #daf7ff;
+    color:black;
+}
+
+p{
+     text-indent: 20px;
+     font-size: 20px;
+}
+
+p a{
+    text-decoration: none;
+    font-style: italic;
+}
+
+span{
+    color: beige;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+li::-moz-list-number , p a , .content h2{
+    color: #77ced9;
+}
+
+li::-moz-list-number {
+    font-style: italic;
+}
+footer {
+    display: flex;
+    background: rgb(20%, 20%, 20% );
+    height: 68px;
+    width: 1024px;
+    justify-content: center;
+
+
+    left: 0;
+    bottom: 0;
+}
+
+.all_content{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1024px;
+    background-color: rgb(40%, 40%, 40%);;
+}
+.nav_list {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.nav_list a {
+    display: flex;
+    margin-right: 41px;
+    margin-top: 8px;
+    color: #fff;
+    transition: color 0.7s;
+    text-transform: uppercase ;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.nav_list a:hover{
+    color: #3b4c50;
+    transition: color 0.7s;
+}
+
+.info {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    width: auto;
+    padding: 10px;
+    border: 4px solid darkturquoise;
+    border-radius: 10px;
+    background: paleturquoise;
+}
+.info div>p{
+    display: inline;
+    width: auto;
+    color: black;
+}
+
+.info, #my_photo{
+    border: 2px solid lightseagreen;
+    box-shadow: -3px 5px 7px aqua;
+}
+
+.content{
+    align-items: center;
+    grid-column: 1 / span2;
+}
+.content h2{
+    padding-left: 90px;
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.content p, ul li{
+    color:white;
+}
+
+.footer_list{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding-left: 0;
+    margin: 0 auto;
+    align-items: center;
+    width: 50%;
+}
+
+.footer_list a {
+    display: flex;
+    color: rgb(40%, 80%, 80%);
+    text-transform: uppercase;
+    font-family: "Source Sans Pro", Arial, sans-serif;
+    letter-spacing: 1px;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer_list a img {
+    width: 30px;
+    height: 30px;
+}
+
+.thumbnail{
+    position: relative;
+    z-index: 0;
+}
+.thumbnail:hover{
+    background-color: transparent;
+    z-index: 50;
+}
+.thumbnail span{
+    position: absolute;
+    background-color: #3d3d3d;
+    padding: 5px;
+    left: -1000px;
+    bottom: 0px;
+    border: 1px solid white;
+    visibility: hidden;
+    border-radius: 4px 4px 4px 4px;
+    -moz-border-radius: 4px 4px 4px 4px;
+    -webkit-border-radius: 4px 4px 4px 4px;
+}
+.thumbnail span img{
+    border-width: 0;
+    padding: 2px;
+    width:400px;
+}
+.thumbnail:hover span{
+    visibility: visible;
+    bottom: 0px;
+    left: -200px;
+}
+.anchor{
+    position: absolute;
+}
+
+.anchor[name=about_me]{
+    top:0px;
+}
+.anchor[name=english]{
+    top:400px;
+}
+.anchor[name=skills]{
+    top:600px;
+}
+.anchor[name=education]{
+    top:650px;
+}
+
+svg{
+    cursor: pointer;  
+    height:50px;
+    width: 50px
+}
+svg path{
+    transition: fill 0.7s;
+    fill: #fff;
+}
+
+svg circle{
+    transition: stroke 0.7s;
+    fill: none;
+    stroke:#ffffff;
+}
+
+svg:hover path{
+   fill: #32bad4;
+   transition: fill 0.7s;
+}
+
+svg:hover circle{
+   stroke:#32bad4;
+   transition: stroke 0.7s;
+}
+
+
+#my_photo{
+    grid-row: 1 / span5;
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    border: 2px solid #2e615e73;
+    box-shadow: -2px 8px 16px #758c8c;
+}
